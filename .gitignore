@@ -1,0 +1,16 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore local environments
+env/
+venv/
+.capstone_env/
+
+# Ignore system files
+.DS_Store
+
+# Ignore prediction logs and sensitive keys
+predictions_log.csv
+creds.json
