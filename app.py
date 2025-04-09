@@ -150,7 +150,7 @@ def make_prediction(input_data):
     x_scaled = scaler.transform(input_df)
     x_pca = pca.transform(x_scaled)
     proba = model.predict_proba(x_pca)[0][1]
-    prediction = "Increase" if proba >= 0.62 else "Decrease"
+    prediction = "Increase" if proba >= 0.72 else "Decrease"
     return prediction, round(proba, 4)
 
 
